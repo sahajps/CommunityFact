@@ -1,0 +1,83 @@
+Loading and filtering notes...
+
+100%|██████████| 820878/820878 [01:07<00:00, 12077.25it/s]
+
+
+100%|██████████| 50808/50808 [02:49<00:00, 299.42it/s]
+noteLanguage
+en       25524
+ja        6421
+pt        5779
+es        4661
+fr        3382
+tr        2315
+de         661
+he         333
+hr         303
+pl         286
+it         203
+ca         176
+nl         164
+id          88
+fa          83
+ar          44
+af          42
+sv          39
+cs          38
+mk          33
+th          32
+ko          23
+no          22
+tl          19
+fi          17
+da          14
+sl          13
+ru          12
+hi          10
+hu           9
+et           8
+so           8
+ro           6
+sq           6
+cy           6
+el           5
+sw           4
+sk           3
+lt           3
+vi           2
+ur           1
+lv           1
+gu           1
+ta           1
+zh-cn        1
+Name: count, dtype: int64
+
+Sampling languages with constraints...
+Language: en, Count: 25524, Status: Including all samples
+Language: ja, Count: 6421, Status: Including all samples
+Language: pt, Count: 5779, Status: Including all samples
+Language: es, Count: 4661, Status: Including all samples
+Language: fr, Count: 3382, Status: Including all samples
+
+Classifying domains using OpenAI API...
+
+100%|██████████| 45767/45767 [1:30:28<00:00,  8.43it/s]
+domain
+other       28828
+politics    12638
+finance      4301
+Name: count, dtype: int64
+
+100%|██████████| 1694/1694 [53:14<00:00,  1.89s/it]
+Failed to fetch tweets 1898813862008557938,1898835019034194281,1898854416712970577,1898872312897892461,1898889547553046887,1898934493785796787,1898952034952286611,1898972329650368808,1898978056221462963,1898978605956313287: 520
+Failed to fetch tweets 1936588214480879858,1936588617897615580,1936589238796976567,1936595009308156082,1936600497559044584,1936614449743270214,1936620886854902135,1936641966587949289,1936787755712872812,1936821797321625811: 520
+Featched metadata for 11970 tweets out of 16939 as of 2026-05-11. Saved to tweets_metadata.json
+
+Extracting claim-labels from tweet-note pairs...
+
+100%|██████████| 11545/11545 [5:27:34<00:00,  1.70s/it]
+
+Building train-test split...
+
+
+Your benchmark dataset is ready to use. Go to data/CF folder.
